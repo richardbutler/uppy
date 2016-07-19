@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Uppy</title>
+  <subtitle>Almost as cute as a puppy</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://uppy.io/"/>
+  <updated>2016-07-19T17:38:30.680Z</updated>
+  <id>http://uppy.io/</id>
+  
+  <author>
+    <name>Transloadit</name>
+    <email>uppybot@uppy.io</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uppy: let’s teach an old dog some new tricks</title>
+    <link href="http://uppy.io/blog/2016/07/uppy-begins/"/>
+    <id>http://uppy.io/blog/2016/07/uppy-begins/</id>
+    <published>2016-07-15T00:00:00.000Z</published>
+    <updated>2016-07-19T17:38:30.680Z</updated>
+    
+    <content type="html">&lt;p&gt;For the past six months, we have been working hard on uppy.io. We feel that it is high time we gave you a look behind the scenes: what are we working on, and why.&lt;/p&gt;
+&lt;p&gt;The way uploading works has not changed in a meaningful way since the days of our trusty old 56 kbit/s modems. Of course, files have gotten bigger and speeds have increased, but that is more or less all there is to say. If it were up to us – and we hope it is – that is all about to change.&lt;/p&gt;
+&lt;p&gt;We at &lt;a href=&quot;https://transloadit.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Transloadit&lt;/a&gt; are on a mission to change the way the world does uploading. To accomplish this, our first step has been to develop an open protocol for resumable file uploads, called &lt;a href=&quot;http://tus.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;‘tus’&lt;/a&gt;. Finally, that 2GB video upload from your smartphone doesn’t have to start over when your train passes through a tunnel! The protocol got &lt;a href=&quot;https://news.ycombinator.com/item?id=10591348&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hacker News excited&lt;/a&gt; on several occasions and is being deployed by, among others, our friends at Vimeo. Now that a stable version 1.0 of ‘tus’ has been released, it is time to put it to the test. A protocol without real-world applications is nothing more than a meaningless document, after all.&lt;/p&gt;
+&lt;p&gt;We are therefore excited to tell you about Uppy: the file uploader that will certainly fetch more than just your newspaper.&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Why-the-need-for-another-file-uploader&quot;&gt;&lt;a href=&quot;#Why-the-need-for-another-file-uploader&quot; class=&quot;headerlink&quot; title=&quot;Why the need for another file uploader?&quot;&gt;&lt;/a&gt;Why the need for another file uploader?&lt;/h2&gt;&lt;p&gt;It is true, there are indeed already a good few file uploading solutions out there (&lt;a href=&quot;http://www.dropzonejs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dropzone&lt;/a&gt;, for instance, is quite good). And – for the most part – they do their job. Nevertheless, they are quite limited in their functionality:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;You can drag and drop files from local disk, but uploaders that supports Instagram, Dropbox or Google Drive are scarce. The ones out there lock you in with vendors and are hard to customize for own use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;File uploaders are seldom mindful of the existence of encoding and processing backends, while the reality is that files often require some form of processing and that the end user would like to receive progress updates with regard to that.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;None of the currently available file uploaders make use of the standardized resumability that ‘tus’ provides, which makes them less than ideal for handling larger files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Lastly, we feel that the current solutions are sometimes dropping the ball when it comes to a polished user experience. We aim to fix that.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All in all, we think there is definitely some ‘trouble at the old mill’ here and it’s time to let Uppy take care of that!&lt;/p&gt;
+&lt;h2 id=&quot;Our-plans-for-Uppy&quot;&gt;&lt;a href=&quot;#Our-plans-for-Uppy&quot; class=&quot;headerlink&quot; title=&quot;Our plans for Uppy&quot;&gt;&lt;/a&gt;Our plans for Uppy&lt;/h2&gt;&lt;p&gt;Uppy will be a JavaScript file uploader that allows you to fetch files, not only from your local disk, but also from places like Dropbox, Instagram, Google Drive, webcams and remote URLs. It will have a modular, plugin-based design, making it lightweight and customizable.&lt;br&gt;Cute on the outside, the core of Uppy is very robust – thanks to resumability through ‘tus’. We are confident that Uppy will be able to send even the biggest of files over the smallest of tubes.&lt;br&gt;Uppy will also offer first class support for accessing Transloadit’s uploading and encoding backend, making it incredibly versatile. Of course, these are all ultimately just plugins, and Uppy can just as easily be used with your own backend – meaning no need to pay any subscription fees.&lt;/p&gt;
+&lt;p&gt;We are intent on making the user experience as smooth and satisfying as possible, in terms of both functionality and visual design. Uppy will have a beautiful, themeable UI and it will look – and work – great on mobile platforms as well. While we hope that advanced users will love the customizable nature of Uppy, an ample selection of presets will also be there to make sure that novice users are not going to be lost in the woods.&lt;/p&gt;
+&lt;p&gt;Lastly, and this is a point of special significance to us, Uppy will be completely open source. When Uppy is finished, you will be free to use it for whatever you like. Until that time, we very much welcome your ideas and contributions. There are still a lot of decisions to be made and this is the perfect time to come and influence the end product.&lt;/p&gt;
+&lt;p&gt;We are going to work hard on bringing you the best file uploader possible and we’ll keep you informed about the development process on &lt;a href=&quot;http://uppy.io/&quot;&gt;uppy.io&lt;/a&gt;. We can’t wait for you to meet Uppy!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It seems we’re on the Hacker News frontpage. &lt;a href=&quot;https://news.ycombinator.com/item?id=12109410&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Comments welcome there&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;For the past six months, we have been working hard on uppy.io. We feel that it is high time we gave you a look behind the scenes: what are we working on, and why.&lt;/p&gt;
+&lt;p&gt;The way uploading works has not changed in a meaningful way since the days of our trusty old 56 kbit/s modems. Of course, files have gotten bigger and speeds have increased, but that is more or less all there is to say. If it were up to us – and we hope it is – that is all about to change.&lt;/p&gt;
+&lt;p&gt;We at &lt;a href=&quot;https://transloadit.com/&quot;&gt;Transloadit&lt;/a&gt; are on a mission to change the way the world does uploading. To accomplish this, our first step has been to develop an open protocol for resumable file uploads, called &lt;a href=&quot;http://tus.io/&quot;&gt;‘tus’&lt;/a&gt;. Finally, that 2GB video upload from your smartphone doesn’t have to start over when your train passes through a tunnel! The protocol got &lt;a href=&quot;https://news.ycombinator.com/item?id=10591348&quot;&gt;Hacker News excited&lt;/a&gt; on several occasions and is being deployed by, among others, our friends at Vimeo. Now that a stable version 1.0 of ‘tus’ has been released, it is time to put it to the test. A protocol without real-world applications is nothing more than a meaningless document, after all.&lt;/p&gt;
+&lt;p&gt;We are therefore excited to tell you about Uppy: the file uploader that will certainly fetch more than just your newspaper.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
